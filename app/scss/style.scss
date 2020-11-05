@@ -1,0 +1,8 @@
+@mixin bold {
+  font-family: "Museo Sans Cyrl 700", sans-serif;
+}
+
+@import "reset";
+@import "normalize";
+@import "fonts";
+@import "interface";

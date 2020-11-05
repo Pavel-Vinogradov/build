@@ -1,4 +1,61 @@
-body
-{
-  font-family: "Museo Sans Cyrl 300",sans-serif;
+*{
+  box-sizing: border-box;
+}
+ img{
+   max-width: 100%;
+ }
+body {
+  font-family: "Museo Sans Cyrl 300", sans-serif;
+  color: #333333;
+}
+
+a {
+  text-decoration: none;
+  color:  #333333;
+  @include bold;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.btn {
+  cursor: pointer;
+  font: inherit;
+  display: inline-block;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  transition: .5s ease-in;
+  vertical-align: top;
+  color:  #333333;
+  @include bold;
+}
+
+.bg--yellow {
+  background-color: #ffd200;
+}
+
+.btn--yellow {
+  background-color: #ffd200;
+
+  &:hover {
+    background-color: #eab534;
+  }
+
+  &:active {
+    background-color: #e5a722;
+  }
+}
+
+.bg--grey {
+  background-color: #f5f5f5;
 }

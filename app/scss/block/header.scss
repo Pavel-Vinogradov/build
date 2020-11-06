@@ -30,3 +30,43 @@
     padding: 20px 35px;
     }
 }
+
+
+@media screen and (min-width:768px) and (max-width:1024px)
+{
+  .header {
+    &-block {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 5px 0;
+    }
+  
+    &__btn {
+      padding: 15px 25px;
+      }
+  }
+}
+
+@media screen and  (max-width:767px)
+{
+  .header {
+    
+  
+     
+  &__img{
+width: 90px;
+height: 44px;
+  }
+  
+    &-contacts {
+      display: none;
+           
+    }
+  
+    &__btn {
+      padding: 15px 25px;
+      font-size: 12px;
+      }
+  } 
+}

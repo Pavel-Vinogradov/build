@@ -1,0 +1,153 @@
+.offer {
+  background: url('../img/offer/offer.png') no-repeat center right;
+  background-color: rgba(255, 255, 255, 0.4);
+  background-size: contain;
+  position: relative;
+
+  &::before {
+    content: '';
+    height: 100%;
+    width: 50%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: white;
+  }
+
+
+  &-block {
+    padding: 60px 0;
+    position: relative;
+    width: 50%;
+
+  }
+
+  // .offer__title
+
+  &__title {
+    font-size: 24px;
+    line-height: 1.34;
+    margin-bottom: 20px;
+    max-width: 360px;
+    @include bold;
+  }
+
+  // .offer__subtitle
+
+  &__subtitle {
+    font-size: 16px;
+    line-height: 1.34;
+    margin-bottom: 20px;
+    max-width: 250px;
+
+  }
+
+  // .offer__form
+
+  &__form {
+    margin-bottom: 20px;
+    padding-right: 90px;
+  }
+
+  // .offer__btn
+
+  &__btn {
+    width: 100%;
+    padding: 20px 0;
+  }
+
+
+  // .offet__input
+
+  &__input {
+    width: 240px;
+    margin-bottom: 20px;
+
+    &:first-child {
+      margin-right: 5px;
+    }
+  }
+
+  &-description {
+    display: flex;
+    justify-content: space-between;
+    // .offer-description__text
+    padding-right: 90px;
+
+    &__text {
+      width: 45%;
+    }
+  }
+
+}
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+  .offer {
+
+
+    &__btn {
+      width: 240px;
+      padding: 20px 0;
+    }
+
+
+    &-description {
+      width: 240px;
+padding-right: 0;
+      // .offer-description__text
+
+      &__text {
+       
+        font-size: 12px;
+      }
+    }
+
+  }
+
+
+}
+
+@media screen and (max-width:767px) {
+  .offer {
+    background: none;
+
+    &-block {
+
+      width: 100%;
+
+    }
+
+    &__title {
+      font-size: 18px;
+    }
+
+    &__subtitle {
+      font-size: 14px;
+    }
+
+    &__form {
+      padding-right: 0px;
+    }
+
+    &__input {
+      width: 100%;
+    }
+
+    &__btn {
+      font-size: 14px;
+    }
+    &-description {
+     
+padding-right: 0;
+      // .offer-description__text
+
+      &__text {
+       
+        font-size: 12px;
+      }
+    }
+  }
+
+
+
+}

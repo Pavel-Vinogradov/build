@@ -1,0 +1,31 @@
+ .warranty {
+
+   // .warranty__item
+
+   &__item {
+     margin: 0 auto;
+     margin-bottom: 30px;
+   }
+
+   // .warranty__img
+
+   &__img {
+     object-fit: cover;
+     margin-bottom: 30px;
+   }
+
+   // .warranty__text
+
+   &__text {
+
+     max-width: 275px;
+     text-align: center;
+   }
+ }
+
+ .warranty-block {
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   margin-top: 100px;
+ }

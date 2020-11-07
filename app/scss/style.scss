@@ -1,6 +1,33 @@
+// Размеры экрана
+$screen-sm: 320px;
+$screen-md: 768px;
+$screen-lg: 1180px;
+$screen-xl: 1440px;
+
 @mixin bold {
   font-family: "Museo Sans Cyrl 700", sans-serif;
 }
+
+
+
+@mixin w-from($screen) {
+  @media (min-width: $screen) {
+    @content;
+  }
+}
+
+@mixin w-to($screen) {
+  @media (max-width: $screen - 1px) {
+    @content;
+  }
+}
+
+@mixin w-range($screen1, $screen2) {
+  @media (min-width: $screen1) and (max-width: $screen2 - 1px) {
+    @content;
+  }
+}
+
 
 @import "reset";
 @import "fonts";
@@ -10,3 +37,10 @@
 @import "block/offer";
 @import "block/porfolio";
 @import "block/price";
+@import "block/alternation";
+@import "block/cards.scss";
+@import "block/warranty.scss";
+@import "block/feedback.scss";
+
+
+@import "block/animate.scss";

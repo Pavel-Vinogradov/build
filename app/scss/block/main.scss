@@ -11,7 +11,6 @@
      padding: 50px 0;
    }
 
-   &-img {}
 
    &-text {
      flex-basis: 50%;
@@ -35,7 +34,7 @@
 
      // .main-text__list
 
-     &__list {}
+   
 
      // .main-text__item
 
@@ -86,7 +85,7 @@
        padding: 50px 0;
      }
 
-     &-img {}
+ 
 
      &-text {
        flex-basis: 80%;
@@ -110,7 +109,7 @@
 
        // .main-text__list
 
-       &__list {}
+    
 
        // .main-text__item
 
@@ -164,7 +163,9 @@
 
      }
 
-     &-img {}
+     &-img {
+       text-align: center;
+     }
 
      &-text {
        // .main-text__title
@@ -182,7 +183,6 @@
 
        // .main-text__list
 
-       &__list {}
 
        // .main-text__item
 

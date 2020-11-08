@@ -51,7 +51,7 @@ const mainItem = document.querySelectorAll('.main-text__item');
 const sectionTitle = document.querySelectorAll('.section__title');
 
 sectionTitle.forEach(item => {
-  item.classList.add('wow', 'fadeInUp')
+  item.classList.add('wow', 'fadeInUp');
 });
 
 mainTitle.classList.add('wow', 'fadeInUp');
@@ -73,3 +73,6 @@ for (let i = 0, j = 0; i < priceItem.length, j < 1.2; i++, j = j + 0.2) {
   element.setAttribute('data-wow-delay', `${j}s`);
 
 }
+
+
+ 

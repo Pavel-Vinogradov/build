@@ -1,0 +1,99 @@
+.footer {
+  display: flex;
+  width: 100%;
+
+  @include w-to(991px) {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  &-block {
+    max-width: 300px;
+    margin-left: -223px;
+
+    @include w-to(1200px) {
+      margin-left: 0;
+    }
+  }
+
+  &-contacts {
+    width: 49.7%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 91px 0 85px;
+
+    @include w-to(991px) {
+      width: initial;
+    }
+
+    @include w-to(768px) {
+      padding: 65px 24px 22px;
+    }
+  }
+
+  // .footer__map
+
+  &__map {
+    width: 50.15%;
+    min-height: 640px;
+    height: 100%;
+
+    @include w-to(991px) {
+      min-width: 320px;
+      width: 100%;
+      min-height: 665px;
+      height: 100%;
+    }
+  }
+
+  // .footer__title
+
+  &__title {
+    font-size: 22px;
+    margin-bottom: 95px;
+    line-height: 33px;
+    @include bold;
+
+    @include w-to(768px) {
+      font-size: 18px;
+      line-height: 21px;
+      margin-bottom: 38px;
+    }
+
+  }
+
+  // .footer__list
+
+  &__list {}
+
+  // .footer__item
+
+  &__item {
+    display: flex;
+    margin-bottom: 35px;
+  }
+
+  // .footer__icon
+
+  &__icon {
+    max-width: 20px;
+    width: 100%;
+    margin-right: 21px;
+
+    @include w-to(768px) {
+      margin-right: 9px;
+    }
+  }
+
+  // .footer__text
+
+  &__text {
+    max-width: 150px;
+    width: 100%;
+  }
+}
+
+b {
+  @include bold;
+}
